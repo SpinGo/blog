@@ -2,7 +2,7 @@
 
 ![](img/scala.gif)
 
-At SpinGo, we've been building our software on Scala, a staticly-typed, multi-paridigm programming language for the JVM. We've enjoyed it and would like to share out experience.
+At SpinGo, we've been building our software on Scala, a staticly-typed, multi-paradigm programming language for the JVM. We've enjoyed it and would like to share our experience.
 
 # Why did we choose Scala?
 
@@ -11,13 +11,14 @@ Two years ago, SpinGo was running entirely PHP on the backend (using the framewo
 Some of the features we looked for in our next toolset were as follows:
 
 - Functional programming support
-- OOP support
+- Object-oriented programming support
 - Strongly typed (and, specifically, a type system that doesn't get in the way)
 - High signal, low noise
-- Great community built around rich standard library. Great dependency management system.
+- Great community built around rich standard library
+- Great dependency management system
 - Reasonable amount of inertia
 - Open Source
-- Bonus: Fast.
+- Bonus: Fast
 
 ![](img/functions.png)
 
