@@ -4,7 +4,7 @@
 
 ![](img/scala.gif)
 
-At SpinGo, we've been building our software on Scala, a staticly-typed, multi-paradigm programming language for the JVM. We've enjoyed it and would like to share our experience.
+At SpinGo, we've been building our software on Scala, a statically-typed, multi-paradigm programming language for the JVM. We've enjoyed it and would like to share our experience.
 
 # Why did we choose Scala?
 
@@ -24,7 +24,7 @@ Some of the features we looked for in our next toolset were as follows:
 
 ![](img/functions.png)
 
-We'd also felt it was time to switch our paradigm to that of rich-client / API for our applications; so, we also wanted a language which had great library support for writing JSON webservices.
+We'd also felt it was time to switch our paradigm to that of rich-client / API for our applications; so, we also wanted a language which had great library support for writing JSON web-services.
 
 We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, `Haskell` or `C#`. These are all fine choices, and companies have built great software in each of them. However, `Scala` stood out as the language that aligned best with our goals.
 
@@ -32,7 +32,7 @@ We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, `Haskell`
 
 ## Scala as a language
 
-Overall, we've really enjoyed it. Scala is a tremendously rich language, with features including pattern-matching, monads and monadic operations built-in to the standard-library, for-comprehensions, multiple-inheritance via traits, type-inference, implicits, and many more! Personally, as one coming from predominently Ruby and Clojure, implicits were one of the features that was most novel to me; I didn't appreciate it at first, but it's quickly become one of my favorite features of the language. The collection library is incredibly robust and contains most every collection manipulation method you need (although, no [transducers](http://clojure.org/transducers) here).
+Overall, we've really enjoyed it. Scala is a tremendously rich language, with features including pattern-matching, monads and monadic operations built-in to the standard-library, for-comprehensions, multiple-inheritance via traits, type-inference, implicits, and many more! Personally, as one coming from predominantly Ruby and Clojure, implicits were one of the features that was most novel to me; I didn't appreciate it at first, but it's quickly become one of my favorite features of the language. The collection library is incredibly robust and contains most every collection manipulation method you need (although, no [transducers](http://clojure.org/transducers) here).
 
 Some comments about experience with Scala from other members of our team:
 
@@ -52,7 +52,7 @@ The Scala maintainers are extremely active, friendly, and helpful. I had the ple
 
 Two years ago, when we began adopting Scala, tool support was a bit of a sore spot. Things have become drastically better since, with 3 solid options for Scala development. In order of our preference:
 
-1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that your code is indexed in an entirely separate process, so you can begin editing code immediately while ensime boots up in the background (I think every IDE should be designed this way). As a bonus, Scala macros are handled properly.
+1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that your code is indexed in an entirely separate process, so you can begin editing code immediately while Ensime boots up in the background (I think every IDE should be designed this way). As a bonus, Scala macros are handled properly.
 
 2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will encounter false negatives (code that IntelliJ thinks won't compile, but actually does). But, it performs well otherwise, and presently supports specific Scala macros used by more popular libraries.
 
@@ -84,11 +84,11 @@ Even with these considered, Scala is a tremendously pleasant environment in whic
 
 # Favorite libraries
 
-We really, REALLY enjoy [Play-JSON](https://www.playframework.com/documentation/2.4.x/ScalaJson). Hands down, it is *the* single best JSON serialization library I have ever used. It's functional, it's ridiculously composable, and the way it uses Scala implicits is genius. The library uses no runtime reflection to load data into classes; instead, macros are used to generate readers and writers from your class structure at compile time. This enables concise format declaration with the option of breaking out and having as much control over serialization as you need. Additionally, since format dependencies are resolved at compile time, if you are missing a way to read a string into a Joda DateTime object, you'll find out at compile time, not at run-time.
+We really, REALLY enjoy [Play-JSON](https://www.playframework.com/documentation/2.4.x/ScalaJson). Hands down, it is *the* single best JSON serialization library I have ever used. It's functional, it's ridiculously composable, and the way it uses Scala implicits is genius. The library uses no run-time reflection to load data into classes; instead, macros are used to generate readers and writers from your class structure at compile time. This enables concise format declaration with the option of breaking out and having as much control over serialization as you need. Additionally, since format dependencies are resolved at compile time, if you are missing a way to read a string into a Joda DateTime object, you'll find out at compile time, not at run-time.
 
 [Spray](http://spray.io) is also genius level. If you favor composition over inheritance (as we do at SpinGo), you'll likely enjoy it. Your routing, header handling, pulling data from form / query string can be concisely expressed using composable, expressive, and declarative directives. It incredibly fast and uses non-blocking IO. Note, Spray itself is being merged into the `Akka` project, as [Akka HTTP](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-M2/scala/http/).
 
-[Akka](http://doc.akka.io/docs/akka/2.3.11/scala.html?_ga=1.189539432.2145268044.1421160381) is an excellent implentation of the Actor model. While the actor pattern has it's limitations and can be easily abused, Finite State Machines are wonderful things and Akka supports this pattern marvelously.
+[Akka](http://doc.akka.io/docs/akka/2.3.11/scala.html?_ga=1.189539432.2145268044.1421160381) is an excellent implementation of the Actor model. While the actor pattern has it's limitations and can be easily abused, Finite State Machines are wonderful things and Akka supports this pattern marvelously.
 
 [Akka Stream](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-RC2/scala.html?_ga=1.189934440.2145268044.1421160381) is a Reactive Streams implementation and provides excellent support for functional stream processing. Reactive Streams is like RX (Reactive Extensions), but all stream components provide a signal for demand, enabling downstream components to slow down message producers in a non-blocking way.
 
@@ -104,5 +104,5 @@ Scala has been a tremendous force for good in helping us to meet our technology 
 
 If you're asking whether you should consider learning and using Scala, I think the answer is yes. Scala has been proven over and over ([by Twitter, Apple, LinkedIn, Netflix, Foursquare, etc.](http://alvinalexander.com/scala/whos-using-scala-akka-play-framework)) to be a great technology choice. It's backed by a successful, innovative, Open Source company, Typesafe, which also develops and offers paid support for various prominent projects in the Scala community, including Apache Spark. It's feature rich, has a vibrant community, and in our experience the code that we produce using it generally works on the first try.
 
-So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, the language and eco-system is very mature.
+So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, the language and ecosystem is very mature.
 
