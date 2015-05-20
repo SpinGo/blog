@@ -24,7 +24,7 @@ Some of the features we looked for in our next toolset were as follows:
 
 We'd also felt it was time to switch our paradigm to that of rich-client / API for our applications; so, we also wanted a language which had great library support for writing JSON webservices.
 
-We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, or `Haskell`. These are all fine choices, and companies have built great software in each of them. In the end, `Scala` stood out as the language that aligned best with our goals.
+We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, `Haskell` or `C#`. These are all fine choices, and companies have built great software in each of them. However, `Scala` stood out as the language that aligned best with our goals.
 
 # What would you report about your experience with Scala?
 
@@ -50,7 +50,7 @@ The Scala maintainers are extremely active, friendly, and helpful. I had the ple
 
 Two years ago, when we began adopting Scala, tool support was a bit of a sore spot. Things have become drastically better since, with 3 solid options for Scala development. In order of our preference:
 
-1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo.
+1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that since code indexing happens in a separate process, you're never forced to wait on it. You can begin editing code immediately while ensime boots up in the background. I think every IDE should be designed this way.
 2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will get a lot of false positives. But, it performs well otherwise, and presently supports specific Scala macros used by popular libraries.
 3. [Scala IDE](http://scala-ide.org) is mature and very stable. It has full Macro support and it's code parsing is power by code from the Scala compiler itself. The biggest downside is that it can, at times, become blocked on background tasks.
 
