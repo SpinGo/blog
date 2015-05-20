@@ -44,7 +44,7 @@ Some comments about experience with Scala from other members of our team:
 
 ## Ecosystem
 
-Typesafe is the Open Source company behind Akka, Spray, Slick, Play, Scala, and others; I am consistently impressed with the amount of thought put behind the entire platform. It's innovative, the products are a pleasure to use and they are really well designed. Further, our experience with Typesafe-backed products has been that they are incredibly stable. It's been rare that we've seen a major bug in even their Milestone releases.
+[Typesafe](https://www.typesafe.com/) is the Open Source company behind [Akka](https://www.typesafe.com/community/core-projects/akka), [Spray](https://www.typesafe.com/blog/typesafe-gets-sprayed), [Slick](http://slick.typesafe.com), [Play](https://www.playframework.com), [Scala](http://www.scala-lang.org), and others; I am consistently impressed with the amount of thought put behind the entire platform. It's innovative, the products are a pleasure to use and they are really well designed. Further, our experience with Typesafe-backed products has been that they are incredibly stable. It's been rare that we've seen a major bug in even their Milestone releases.
 
 The Scala maintainers are extremely active, friendly, and helpful. I had the pleasure of working with them in order to get a fix I'd made to Scala accepted (which, I'm proud to say landed in [2.11.5](http://www.scala-lang.org/news/2.11.5#contributors)! ).
 
@@ -102,7 +102,7 @@ Scala has been a tremendous force for good in helping us to meet our technology 
 
 # Conclusion
 
-If you're asking whether you should consider learning and using Scala, I think the answer is yes. Scala has been proven over and over ([by Twitter, Apple, LinkedIn, Netflix, Foursquare, etc.](http://alvinalexander.com/scala/whos-using-scala-akka-play-framework)) to be a great technology choice. It's backed by a successful, innovative, Open Source company, Typesafe, which also develops and offers paid support for various prominent projects in the Scala community, including Apache Spark. It's feature rich, has a vibrant community, and in our experience the code that we produce using it generally works on the first try.
+If you're asking whether you should consider learning and using Scala, I think the answer is yes. Scala has been proven over and over ([by Twitter, Apple, LinkedIn, Netflix, Foursquare, etc.](http://alvinalexander.com/scala/whos-using-scala-akka-play-framework)) to be a great technology choice. It's backed by a successful, innovative, Open Source company, [Typesafe](https://www.typesafe.com), which also develops and offers paid support for various prominent projects in the Scala community, including [Apache Spark](https://www.typesafe.com/community/other-projects/apache-spark). It's feature rich, has a vibrant community, and in our experience the code that we produce using it generally works on the first try.
 
 So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, the language and ecosystem is very mature.
 
