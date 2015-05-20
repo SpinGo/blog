@@ -42,7 +42,7 @@ Some comments about experience with Scala from other members of our team:
 
 ## Ecosystem?
 
-Typesafe is the Open Source company behind Akka, Spray, Slick, Play, Scala, and others; I am consistently impressed with the amount of thought put behind the entire platform. It's innovative, the products are a pleasure to use and they are really well designed. Further, our experience with Typesafe backed products has been that they are incredibly stable. It's been rare that we've seen a major bug in even their Milestone releases.
+Typesafe is the Open Source company behind Akka, Spray, Slick, Play, Scala, and others; I am consistently impressed with the amount of thought put behind the entire platform. It's innovative, the products are a pleasure to use and they are really well designed. Further, our experience with Typesafe-backed products has been that they are incredibly stable. It's been rare that we've seen a major bug in even their Milestone releases.
 
 The Scala maintainers are extremely active, friendly, and helpful. I had the pleasure of working with them in order to get a fix I'd made to Scala accepted (which, I'm proud to say landed in [2.11.5](http://www.scala-lang.org/news/2.11.5#contributors)! ).
 
