@@ -1,5 +1,7 @@
 # SpinGo <3 Scala
 
+- Author: Tim Harper
+
 ![](img/scala.gif)
 
 At SpinGo, we've been building our software on Scala, a staticly-typed, multi-paradigm programming language for the JVM. We've enjoyed it and would like to share our experience.
@@ -50,12 +52,24 @@ The Scala maintainers are extremely active, friendly, and helpful. I had the ple
 
 Two years ago, when we began adopting Scala, tool support was a bit of a sore spot. Things have become drastically better since, with 3 solid options for Scala development. In order of our preference:
 
-1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that your code is indexed in an entirely separate process, so you can begin editing code immediately while ensime boots up in the background. Scala macros are handled properly.
-2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will get a lot of false positives. But, it performs well otherwise, and presently supports specific Scala macros used by popular libraries.
-3. [Scala IDE](http://scala-ide.org) is mature and very stable. It has full Macro support and it's code parsing is power by code from the Scala compiler itself. The biggest downside is that it can, at times, become blocked on background tasks.
+1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that your code is indexed in an entirely separate process, so you can begin editing code immediately while ensime boots up in the background (I think every IDE should be designed this way). As a bonus, scala macros are handled properly.
+
+2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will encounter false negatives (code that IntelliJ thinks won't compile, but actually does). But, it performs well otherwise, and presently supports specific Scala macros used by more popular libraries.
+
+3. [Scala IDE](http://scala-ide.org) is mature and very stable. It has full Macro support and it's code parsing is power by code from the Scala compiler itself. The biggest downside is that it can, at times, become blocked on background tasks, rendering it slow to use. This has been getting better, and you can alleviate some of the performance issues by changing the default HEAP size for Eclipse, but as of this writing issues still exist.
+
+### (Ensime sneak peak)
+
+Here are some quick screenshots showing off Ensime in action:
+
+#### Code completion using Ensime / Emacs:
 
 ![Ensime code-complete](img/ensime-complete.png)
+
+#### Refactor tool support in Ensime / Emacs:
+
 ![Ensime refactor-rename](img/ensime-refactor.png)
+
 
 ## Complaints
 
