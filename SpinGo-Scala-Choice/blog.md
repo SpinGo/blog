@@ -82,9 +82,13 @@ We really, REALLY enjoy [Play-JSON](https://www.playframework.com/documentation/
 
 [Op-Rabbit](https://github.com/SpinGo/op-rabbit); okay, shameless plug here. We developed `Op-Rabbit`. It's a high-level, opinionated RabbitMQ toolkit for implementing common message patterns.
 
-# Conclusion
+# Has Scala helped you to meet your technology goals?
 
-In hindsight, Scala has proven to be a great technology choice. It's backed by a successful, vibrant Open Source company, Typesafe, which also develops and offers paid support for various prominent projects in the Scala community, including Apache Spark. It's feature rich, has a vibrant community, and in our experience the code that we produce generally works on the first try.
+Overwhelmingly, yes. Scala's support for functional programming has made it an absolute joy to program in that paradigm. The `Option` monad alone has entirely obliterated null exceptions in our code (DEATH TO NULL!!!), since we are forced to express, using the type-system, when a value is or isn't required. Our regression rate is tremendously low, and our various API servers have enjoyed a 99.9%+ uptime, month over month. This means that than scrambling to put out fires is the exception, not the norm, and we're more able to focus on building new software and doing so without a constant sense of urgency. As mentioned before, the concurrency, serialization and HTTP libraries are also an absolute joy to use. So, RESOUNDING YES! Scala is an amazing platform on which to build and it has been a key part of transforming our technical stack for good.
 
-If you're looking to move away from Java, take a serious look at Scala. Right now is a great time to adopt it. Tool support has generally arrived, it's a seriously solid option.
+# Should I consider learning and using Scala?
+
+I'm biased here, but I think the answer is yes. Scala has been proven over and over to be a great technology choice. It's backed by a successful, innovative, Open Source company, Typesafe, which also develops and offers paid support for various prominent projects in the Scala community, including Apache Spark. It's feature rich, has a vibrant community, and in our experience the code that we produce generally works on the first try.
+
+So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, the language and eco-system is very mature.
 
