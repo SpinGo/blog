@@ -1,6 +1,6 @@
 # SpinGo <3 Scala
 
-![](http://www.gravity.com/wp-content/uploads/2013/07/scala.gif)
+![](img/scala.gif)
 
 At SpinGo, we've been building our software on Scala, a staticly-typed, multi-paridigm programming language for the JVM. We've enjoyed it and would like to share out experience.
 
@@ -19,7 +19,7 @@ Some of the features we looked for in our next toolset were as follows:
 - Open Source
 - Bonus: Fast.
 
-![](http://zeroturnaround.com/wp-content/uploads/2013/09/Function_machine2.svg_.png)
+![](img/functions.png)
 
 We'd also felt it was time to switch our paradigm to that of rich-client / API for our applications; so, we also wanted a language which had great library support for writing JSON webservices.
 
@@ -53,8 +53,8 @@ Two years ago, when we began adopting Scala, tool support was a bit of a sore sp
 2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will get a lot of false positives. But, it performs well otherwise, and presently supports specific Scala macros used by popular libraries.
 3. [Scala IDE](http://scala-ide.org) is mature and very stable. It has full Macro support and it's code parsing is power by code from the Scala compiler itself. The biggest downside is that it can, at times, become blocked on background tasks.
 
-![Ensime code-complete](https://files.slack.com/files-pri/T02FLSA4K-F04UD85J8/screen_shot_2015-05-20_at_00.21.11.png)
-![Ensime refactor-rename](https://files.slack.com/files-pri/T02FLSA4K-F04UD8KRU/screen_shot_2015-05-20_at_00.25.32.png)
+![Ensime code-complete](img/ensime-complete.png)
+![Ensime refactor-rename](img/ensime-refactor.png)
 
 ## What has been your biggest complaints about Scala?
 
