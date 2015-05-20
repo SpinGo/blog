@@ -52,7 +52,7 @@ The Scala maintainers are extremely active, friendly, and helpful. I had the ple
 
 Two years ago, when we began adopting Scala, tool support was a bit of a sore spot. Things have become drastically better since, with 3 solid options for Scala development. In order of our preference:
 
-1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that your code is indexed in an entirely separate process, so you can begin editing code immediately while ensime boots up in the background (I think every IDE should be designed this way). As a bonus, scala macros are handled properly.
+1. [Ensime / Emacs](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide) is our favorite Scala environment at SpinGo. It's a community effort and allows us to use Emacs with many of the features you'd expect from an IDE. My favorite thing about Ensime is that your code is indexed in an entirely separate process, so you can begin editing code immediately while ensime boots up in the background (I think every IDE should be designed this way). As a bonus, Scala macros are handled properly.
 
 2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will encounter false negatives (code that IntelliJ thinks won't compile, but actually does). But, it performs well otherwise, and presently supports specific Scala macros used by more popular libraries.
 
@@ -73,7 +73,7 @@ Here are some quick screenshots showing off Ensime in action:
 
 ## Complaints
 
-No language or tool is perfect; Scala has some spots that occassionally cause us to feel sad. These are some of lamentations:
+No language or tool is perfect; Scala has some spots that occasionally cause us to feel sad. These are some of lamentations:
 
 - Type inference is complex, it can take a while to understand why in some cases it can infer the type properly, but in others it can't. As an upside, the set of rules for type inference are quite simple once you understand them, and they are applied consistently; it is unlikely that a beginning Scala programmer will grok this aspect of Scala.
 - Compiler performance is still on the slow side. To be fair, the compiler is doing a LOT more work for you than the Java compiler. In practice, however, it's been manageable, and improved new incremental compiler that shipped with 2.11 has reduced a lot this pain.
