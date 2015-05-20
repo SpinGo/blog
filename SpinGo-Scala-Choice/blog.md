@@ -38,7 +38,7 @@ Some comments about experience with Scala from other members of our team:
 
 > After I spent a few hours studying Scala I decided I wanted to work in it full time.  A year after I couldn't imagine going back to writing Java. Scala changed the way I look at software problems." - [Jake Wilson](https://github.com/jakewilson801)
 
-> Transitioning from programming in Ruby to Scala has been great. Many of the features I enjoyed in Ruby are available in Scala but with a powerful type sytem, better functional programming support, and it's fast! - [Joe Tanner](https://github.com/jtanner)
+> Transitioning from programming in Ruby to Scala has been great. Many of the features I enjoyed in Ruby are available in Scala but with a powerful type system, better functional programming support, and it's fast! - [Joe Tanner](https://github.com/jtanner)
 
 > Having developed in Java for the past 15 years, I've found Scala to be a breath of fresh air. Elegant, concise, powerful, expressive. The power of functional programming is something you can't live without once you wrap your head around it. Your code becomes cleaner and more testable, and easier to reason about. And the designers and maintainers of Scala are as nice as they are smart, very willing to answer questions themselves and receive criticism as readily as they do praise. This keeps the language fresh, and progressing instead of stagnant. - [Eric Nelson](https://github.com/enelson)
 
