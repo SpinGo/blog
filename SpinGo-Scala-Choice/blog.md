@@ -24,7 +24,7 @@ Some of the features we looked for in our next toolset were as follows:
 
 We'd also felt it was time to switch our paradigm to that of rich-client / API for our applications; so, we also wanted a language which had great library support for writing JSON webservices.
 
-We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, or `Haskell`. These are all fine choices, and companies have built great software in each of them. In the end, `Scala` stood out as the clear as the language that aligned best with our goals.
+We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, or `Haskell`. These are all fine choices, and companies have built great software in each of them. In the end, `Scala` stood out as the language that aligned best with our goals.
 
 # What would you report about your experience with Scala?
 
