@@ -26,7 +26,7 @@ We'd also felt it was time to switch our paradigm to that of rich-client / API f
 
 We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, `Haskell` or `C#`. These are all fine choices, and companies have built great software in each of them. However, `Scala` stood out as the language that aligned best with our goals.
 
-# What would you report about your experience with Scala?
+# Our experience with Scala
 
 ## Scala as a language
 
@@ -40,7 +40,7 @@ Some comments about experience with Scala from other members of our team:
 
 > Having developed in Java for the past 15 years, I've found Scala to be a breath of fresh air. Elegant, concise, powerful, expressive. The power of functional programming is something you can't live without once you wrap your head around it. Your code becomes cleaner and more testable, and easier to reason about. And the designers and maintainers of Scala are as nice as they are smart, very willing to answer questions themselves and receive criticism as readily as they do praise. This keeps the language fresh, and progressing instead of stagnant. - [Eric Nelson](https://github.com/enelson)
 
-## Ecosystem?
+## Ecosystem
 
 Typesafe is the Open Source company behind Akka, Spray, Slick, Play, Scala, and others; I am consistently impressed with the amount of thought put behind the entire platform. It's innovative, the products are a pleasure to use and they are really well designed. Further, our experience with Typesafe-backed products has been that they are incredibly stable. It's been rare that we've seen a major bug in even their Milestone releases.
 
@@ -57,7 +57,7 @@ Two years ago, when we began adopting Scala, tool support was a bit of a sore sp
 ![Ensime code-complete](img/ensime-complete.png)
 ![Ensime refactor-rename](img/ensime-refactor.png)
 
-## What has been your biggest complaints about Scala?
+## Complaints
 
 No language or tool is perfect; Scala has some spots that occassionally cause us to feel sad. These are some of lamentations:
 
@@ -68,7 +68,7 @@ No language or tool is perfect; Scala has some spots that occassionally cause us
 
 Even with these considered, Scala is a tremendously pleasant environment in which to work. We remain tremendously optimistic about the future of Scala.
 
-# Do you have any favorite libraries?
+# Favorite libraries
 
 We really, REALLY enjoy [Play-JSON](https://www.playframework.com/documentation/2.4.x/ScalaJson). Hands down, it is *the* single best JSON serialization library I have ever used. It's functional, it's ridiculously composable, and the way it uses Scala implicits is genius. The library uses no runtime reflection to load data into classes; instead, macros are used to generate readers and writers from your class structure at compile time. This enables concise format declaration with the option of breaking out and having as much control over serialization as you need. Additionally, since format dependencies are resolved at compile time, if you are missing a way to read a string into a Joda DateTime object, you'll find out at compile time, not at run-time.
 
@@ -82,13 +82,13 @@ We really, REALLY enjoy [Play-JSON](https://www.playframework.com/documentation/
 
 [Op-Rabbit](https://github.com/SpinGo/op-rabbit); okay, shameless plug here. We developed `Op-Rabbit`. It's a high-level, opinionated RabbitMQ toolkit for implementing common message patterns.
 
-# Has Scala helped you to meet your technology goals?
+# Scala helped us reach our technology goals
 
 Scala has been a tremendous force for good in helping us to meet our technology goals. Scala's support for functional programming has made it an absolute joy to program in that paradigm. The `Option` monad alone has entirely obliterated null exceptions in our code (DEATH TO NULL!!!), since we are forced to express, using the type-system, when a value is or isn't required. Our regression rate is tremendously low, and our various API servers have enjoyed a 99.9%+ uptime, month over month. This means that scrambling to put out fires is the exception, not the norm, and we're more able to focus on building new software and doing so without a constant sense of urgency. As mentioned before, the concurrency, serialization and HTTP libraries are also an absolute joy to use.
 
-# Should I consider learning and using Scala?
+# Conclusion
 
-I'm biased here, but I think the answer is yes. Scala has been proven over and over to be a great technology choice. It's backed by a successful, innovative, Open Source company, Typesafe, which also develops and offers paid support for various prominent projects in the Scala community, including Apache Spark. It's feature rich, has a vibrant community, and in our experience the code that we produce generally works on the first try.
+If you're asking whether you should consider learning and using Scala, I think the answer is yes. Scala has been proven over and over ([by Twitter, Apple, LinkedIn, Netflix, Foursquare, etc.](http://alvinalexander.com/scala/whos-using-scala-akka-play-framework)) to be a great technology choice. It's backed by a successful, innovative, Open Source company, Typesafe, which also develops and offers paid support for various prominent projects in the Scala community, including Apache Spark. It's feature rich, has a vibrant community, and in our experience the code that we produce using it generally works on the first try.
 
 So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, the language and eco-system is very mature.
 
