@@ -76,7 +76,7 @@ Here are some quick screenshots showing off Ensime in action:
 No language or tool is perfect; Scala has some spots that occasionally cause us to feel sad. These are some lamentations:
 
 - Type inference is complex, it can take a while to understand why in some cases it can infer the type properly, but in others it can't. As an upside, the set of rules for type inference are quite simple once you understand them, and they are applied consistently; it is unlikely that a beginning Scala programmer will grok this aspect of Scala.
-- Compiler performance is still on the slow side. To be fair, the compiler is doing a LOT more work for you than the Java compiler. In practice, however, it's been manageable, and improved new incremental compiler that shipped with 2.11 has reduced a lot this pain.
+- Compiler performance is still on the slow side. To be fair, the compiler is doing a LOT more work for you than other compilers (such the one for Java). In practice, however, it's been manageable, and improved new incremental compiler that shipped with 2.11 has reduced a lot this pain.
 - Type erasure. This is a JVM limitation, and is fundamentally due to the decision of how Java implemented generics. In practice, it's a minor qualm, and is easy enough to work around
 - Referencing abstract trait values inside of the trait constructor is a runtime exception waiting to happen. The trait constructor is run before the class which implements it; therefore, if the class initializes a value, then the value will not be available in the trait constructor. Fortunately, accessing the abstract values lazily is an elegant to the solution. The compiler should be able to detect this and warn about it, but presently doesn't.
 
