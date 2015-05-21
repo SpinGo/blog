@@ -104,5 +104,5 @@ Scala has been a tremendous force for good in helping us to meet our technology 
 
 If you're asking whether you should consider learning and using Scala, I think the answer is yes. Scala has been proven over and over ([by Twitter, Apple, LinkedIn, Netflix, Foursquare, etc.](http://alvinalexander.com/scala/whos-using-scala-akka-play-framework)) to be a great technology choice. It's backed by a successful, innovative, open source company, [Typesafe](https://www.typesafe.com), which also develops and offers paid support for various prominent projects in the Scala community, including [Apache Spark](https://www.typesafe.com/community/other-projects/apache-spark). It's feature rich, has a vibrant community, and in our experience the code that we produce using Scala generally works on the first run.
 
-So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, and the language and ecosystem is very mature.
+So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, and the language and ecosystem are very mature.
 
