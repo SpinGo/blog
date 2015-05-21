@@ -12,21 +12,21 @@ Two years ago, SpinGo was running entirely PHP on the backend (using the framewo
 
 Some of the features we looked for in our next toolset were as follows:
 
-- Functional programming support
-- Object-oriented programming support
+- Functional programming support (specifically, higher-order functions, closures, lazy-evaluation and immutable data structures)
+- Object-oriented like polymorphism support
 - Strongly typed (and, specifically, a type system that doesn't get in the way)
 - High signal, low noise
 - Great community built around rich standard library
-- Great dependency management system
+- Mature dependency management system
 - Reasonable amount of inertia
-- Open Source
+- Open source
 - Bonus: Fast
 
 ![](img/functions.png)
 
-We'd also felt it was time to switch our paradigm to that of rich-client / API for our applications; so, we also wanted a language which had great library support for writing JSON web-services.
+We'd also felt it was time to switch our web-applications from to a rich-client / API paradigm, so a language with great library support for writing JSON web-services was considered bonus, also.
 
-We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, `Haskell` or `C#`. These are all fine choices, and companies have built great software in each of them. However, `Scala` stood out as the language that aligned best with our goals.
+We would've been willing to compromise on one feature in order to get really strong support in another. And, of course it bears mentioning that it is technically possible to write a Haskell compiler in PHP, so the argument of "any programmer worth the weight of his skin can write good code in any language" isn't helpful here. It's not about what you can do in your language, it's what that language makes easy, and the defaults that it assumes. We most deeply considered moving to `Ruby`, `Clojure`, `Go`, `Python`, `Haskell` or `C#`. All of these are fine choices, and companies have built great software in each of them. After researching and discovering `Scala`, it stood out as the obvious choice; it ranked very high on all of our wish-list items.
 
 # Our experience with Scala
 
@@ -104,5 +104,5 @@ Scala has been a tremendous force for good in helping us to meet our technology 
 
 If you're asking whether you should consider learning and using Scala, I think the answer is yes. Scala has been proven over and over ([by Twitter, Apple, LinkedIn, Netflix, Foursquare, etc.](http://alvinalexander.com/scala/whos-using-scala-akka-play-framework)) to be a great technology choice. It's backed by a successful, innovative, Open Source company, [Typesafe](https://www.typesafe.com), which also develops and offers paid support for various prominent projects in the Scala community, including [Apache Spark](https://www.typesafe.com/community/other-projects/apache-spark). It's feature rich, has a vibrant community, and in our experience the code that we produce using it generally works on the first try.
 
-So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, the language and ecosystem is very mature.
+So, yes, you should definitely consider it. And, right now is a great time to adopt it. Tool support has generally arrived, and the language and ecosystem is very mature.
 
