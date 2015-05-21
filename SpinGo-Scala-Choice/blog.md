@@ -60,7 +60,7 @@ Two years ago, when we began adopting Scala, tool support was a bit of a sore sp
 
 2. Following that, [IntelliJ](https://www.jetbrains.com/idea/features/scala.html) would presently win second place. It works well, but you're forced to wait for the initial indexing process when booting up the editor. My biggest criticism of IntelliJ is it lacks proper Macro support, so you will encounter false negatives (code that IntelliJ thinks won't compile, but actually does). But, it performs well otherwise, and presently supports specific Scala macros used by more popular libraries.
 
-3. [Scala IDE](http://scala-ide.org) is mature and very stable. It has full Macro support and it's code parsing is powered by code from the Scala compiler itself. The biggest downside is that it can, at times, become blocked on background tasks, rendering it slow to use. This has been getting better, and you can alleviate some of the performance issues by changing the default HEAP size for Eclipse, but as of this writing issues still exist.
+3. [Scala IDE](http://scala-ide.org) is mature and very stable. It has full Macro support and it's code parsing is powered by code from the Scala compiler itself. The biggest downside is that it can, at times, become blocked on background tasks, rendering it slow to use. This has been getting better, and you can alleviate some of the performance issues by changing the default heap size for Eclipse, but as of this writing issues still exist.
 
 ### (Ensime sneak peak)
 
@@ -94,7 +94,7 @@ We really, REALLY enjoy [Play-JSON](https://www.playframework.com/documentation/
 
 [Akka](http://doc.akka.io/docs/akka/2.3.11/scala.html?_ga=1.189539432.2145268044.1421160381) provides an excellent implementation of the actor model. While the actor pattern has it's limitations and can be easily abused, finite state machines are wonderful things and Akka supports this pattern marvelously.
 
-[Akka Stream](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-RC2/scala.html?_ga=1.189934440.2145268044.1421160381) is a Reactive Streams implementation and provides excellent support for functional stream processing. Reactive Streams is like RX (Reactive Extensions), but all stream components provide a signal for demand, enabling downstream components to slow down message producers in a non-blocking way. [Akka Stream] makes it easy to define various stream components in separate modules, and then connect them all together in a unified flow graph.
+[Akka Stream](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-RC2/scala.html?_ga=1.189934440.2145268044.1421160381) is a Reactive Streams implementation and provides excellent support for functional stream processing. Reactive Streams is like RX (Reactive Extensions), but all stream components provide a signal for demand, enabling downstream components to slow down message producers in a non-blocking way. `Akka Stream` makes it easy to define various stream components in separate modules, and then connect them all together in a unified flow graph.
 
 [Slick](http://slick.typesafe.com) is a functional relational database mapper. Queries are written using for-comprehensions, and can be validated by the Scala compiler at compile time. It is highly composable, too; making it easy to reuse partial query logic in a myriad of ways (and, the Scala compiler can assert these combinations will be valid).
 
