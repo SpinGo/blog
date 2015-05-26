@@ -1,3 +1,12 @@
+# Publication notice!
+
+This post has been published to our public blog.
+
+In order to read the latest version, and to comment, **please follow the link**: [SpinGo <3 Scala](http://www.spingo.com/blog/post/spingo-3-scala)
+
+---
+
+
 # SpinGo <3 Scala
 
 - Author: Tim Harper
